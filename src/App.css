@@ -1,0 +1,15 @@
+.App {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center center;
+	gap: 1rem;
+}
+
+.box {
+	padding-block: 1rem;
+	padding-inline: 2rem;
+}
+.score-box {
+	width: 100%;
+	padding-block: 0.5rem;
+}

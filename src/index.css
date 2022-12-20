@@ -16,7 +16,8 @@ html {
 body {
 	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
 	font-family: 'Outfit', sans-serif;
 	background-color: hsl(199, 33%, 15%);
