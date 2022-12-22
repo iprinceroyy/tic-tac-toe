@@ -1,0 +1,7 @@
+.board {
+	// width: min(83%, 450px);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	gap: 1rem;
+}

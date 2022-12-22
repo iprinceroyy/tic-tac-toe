@@ -1,6 +1,5 @@
 import './App.css';
-import logo from './assets/logo.svg';
-import restartIcon from './assets/icon-restart.svg';
+import Game from './components/game/game.component';
 
 const origBoard = ['o', 1, 'x', 'x', 4, 'x', 6, 'o', 'o'];
 
@@ -89,30 +88,7 @@ const minimax = (newBoard, player) => {
 function App() {
 	return (
 		<div className='App'>
-			<div>
-				<img src={logo} alt='logo'></img>
-			</div>
-			<div>
-				<p>x turn</p>
-			</div>
-
-			<div>
-				<img src={restartIcon} alt='restart'></img>
-			</div>
-
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-			<button className='box'>xo</button>
-
-			<p className='score-box'>x(you)</p>
-			<p className='score-box'>ties</p>
-			<p className='score-box'>o(cpu)</p>
+			<Game />
 		</div>
 	);
 }
