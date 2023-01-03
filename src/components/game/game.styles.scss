@@ -1,0 +1,39 @@
+.game {
+	display: grid;
+	grid-template-rows: 0.3fr 4fr 0.3fr;
+	gap: 1rem;
+}
+.game-controls {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	place-items: start center;
+
+	img {
+		width: 3.4rem;
+		justify-self: flex-start;
+	}
+
+	p {
+		display: flex;
+		align-items: center;
+		background-color: hsl(199, 35%, 19%);
+		padding-block: 0.4rem;
+		padding-inline: 0.3rem;
+		border-radius: 5px;
+		color: hsl(183, 85%, 43%);
+		img {
+			width: 1rem;
+		}
+	}
+
+	div {
+		background-color: #a6bdc6;
+		padding: 0.3rem 0.7rem;
+		border-radius: 5px;
+		img {
+			margin-block: 0.3rem;
+			width: 1.1rem;
+		}
+	}
+}
