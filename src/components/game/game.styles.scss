@@ -7,7 +7,8 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
-	place-items: start center;
+	place-items: flex-start center;
+	padding-inline: 0.5rem;
 
 	img {
 		width: 3.4rem;
@@ -17,20 +18,24 @@
 	p {
 		display: flex;
 		align-items: center;
+		gap: 0.5rem;
 		background-color: hsl(199, 35%, 19%);
 		padding-block: 0.4rem;
 		padding-inline: 0.3rem;
 		border-radius: 5px;
-		color: hsl(183, 85%, 43%);
+		color: #a8bfc6;
+
 		img {
 			width: 1rem;
 		}
 	}
 
 	div {
-		background-color: #a6bdc6;
+		background-color: #a8bfc6;
 		padding: 0.3rem 0.7rem;
 		border-radius: 5px;
+		justify-self: flex-end;
+
 		img {
 			margin-block: 0.3rem;
 			width: 1.1rem;
